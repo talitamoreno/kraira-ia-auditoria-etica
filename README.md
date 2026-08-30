@@ -1,4 +1,3 @@
-```markdown
 ## 📚 Documentação Adicional
 
 - [Anexo A – Documentação Técnica do Pipeline](docs/anexo-a-pipeline.md)

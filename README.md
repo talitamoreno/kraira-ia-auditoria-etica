@@ -101,7 +101,7 @@ A auditoria de gênero é essencial, mas insuficiente. A análise unidimensional
 
 - [Anexo A – Documentação Técnica do Pipeline](docs/anexo-a-pipeline.md)
 - [Anexo B – Interseccionalidade e Riscos Residuais](docs/anexo-b-interseccionalidade.md)
-- [Relatório Final em PDF](docs/relatorio_final.pdf) 
+- [Relatório Final em PDF](https://github.com/talitamoreno/kraira-ia-auditoria-etica/blob/main/docs/kraira_ia_documento_final.pdf)
 
 ---
 

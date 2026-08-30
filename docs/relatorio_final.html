@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Kraira IA – Relatório de Impacto Social e Auditoria Ética</title>
+  <style>
+    :root {
+      --primary: #1a2a3a;
+      --secondary: #e8eef2;
+      --accent: #3b6e8f;
+      --text: #333;
+      --muted: #666;
+      --border: #ccc;
+      --zebra: #f9fbfc;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 10.5pt;
+    }
+    .page {
+      page-break-after: always;
+      padding: 1.8cm;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .page:last-child { page-break-after: auto; }
+    h1, h2, h3, h4 { color: var(--primary); margin-bottom: 0.5em; }
+    h1 { font-size: 26pt; border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+    h2 { font-size: 17pt; margin-top: 1.2em; }
+    h3 { font-size: 13pt; margin-top: 1em; }
+    h4 { font-size: 11pt; margin-top: 0.8em; }
+    p { margin-bottom: 0.8em; text-align: justify; }
+    ul, ol { margin-left: 1.5em; margin-bottom: 0.8em; }
+    li { margin-bottom: 0.3em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; font-size: 10pt; }
+    th { background-color: var(--secondary); color: var(--primary); font-weight: 600; }
+    tr:nth-child(even) { background-color: var(--zebra); }
+    .cover { text-align: center; padding-top: 5.5cm; }
+    .cover h1 { border-bottom: none; font-size: 30pt; margin-bottom: 0.3em; }
+    .cover .subtitle { font-size: 14pt; color: var(--muted); margin-bottom: 1em; }
+    .cover .meta { margin-top: 2.5cm; font-size: 11pt; color: var(--muted); }
+    .cover .meta em { display: block; margin-top: 0.5cm; font-size: 10pt; }
+    .toc { list-style: none; margin-left: 0; }
+    .toc li { margin-bottom: 8px; font-size: 12pt; }
+    .toc li a { text-decoration: none; color: var(--text); }
+    .toc li a:hover { color: var(--accent); }
+    .toc li span { display: inline-block; min-width: 2em; font-weight: bold; color: var(--accent); }
+    .badge { display: inline-block; background-color: var(--secondary); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-size: 9pt; font-weight: bold; }
+    .highlight { background-color: #f0f7fa; border-left: 4px solid var(--accent); padding: 10px 15px; margin: 1em 0; }
+    .footer { margin-top: 1.5em; padding-top: 0.5em; border-top: 1px solid var(--border); text-align: center; font-size: 9pt; color: var(--muted); }
+    @media print {
+      @page {
+        @bottom-center { content: "Projeto Kraira IA – Relatório de Impacto Social e Auditoria Ética | Página " counter(page); font-size: 9pt; color: #666; }
+      }
+      .page { page-break-after: always; }
+      .page:last-child { page-break-after: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- CAPA -->
+<div class="page cover">
+  <h1>Projeto Kraira IA</h1>
+  <div class="subtitle">Relatório de Impacto Social e Auditoria Ética</div>
+  <div class="meta">
+    <p><strong>Documento Final – Experiência Prática 4</strong></p>
+    <p>Talita Moreno | Agosto de 2026</p>
+    <em>Projeto acadêmico – uso educacional</em>
+  </div>
+</div>
+
+<!-- SUMÁRIO -->
+<div class="page">
+  <h2>Sumário</h2>
+  <ol class="toc">
+    <li><a href="#resumo"><span>1.</span> Resumo Executivo</a></li>
+    <li><a href="#impacto"><span>2.</span> Impacto Social</a></li>
+    <li><a href="#pipeline"><span>3.</span> Pipeline Técnico</a></li>
+    <li><a href="#interseccionalidade"><span>4.</span> Interseccionalidade e Riscos Residuais</a></li>
+    <li><a href="#referencias"><span>5.</span> Referências</a></li>
+  </ol>
+</div>
+
+<!-- 1. RESUMO EXECUTIVO -->
+<div class="page" id="resumo">
+  <h2>1. Resumo Executivo</h2>
+
+  <h3>1.1 Problema</h3>
+  <p>Algoritmos de recrutamento treinados com dados históricos perpetuam desigualdades sob falsa neutralidade. No Brasil, mulheres ocupam apenas <strong>10,58%</strong> das posições de IA, setor que paga <strong>56%</strong> a mais que a média. Essa "Barreira de Vidro Algorítmica" exclui talentos diversos, reduz a inovação e expõe empresas a riscos jurídicos crescentes com o Marco Legal da IA (PL 2338/2023).</p>
+
+  <h3>1.2 Solução</h3>
+  <p>A Kraira IA é uma plataforma de auditoria de equidade em recrutamento que opera em cinco etapas:</p>
+  <ul>
+    <li><strong>Coleta</strong> – aceita dados brutos do funil sem preparação prévia.</li>
+    <li><strong>Limpeza e padronização</strong> – corrige inconsistências automaticamente.</li>
+    <li><strong>Auditoria</strong> – calcula Disparate Impact (DI), taxas de aprovação e correlações. <span class="badge">Interseccional</span></li>
+    <li><strong>Relatório executivo</strong> – diagnóstico claro e recomendações práticas.</li>
+    <li><strong>Acompanhamento</strong> – dashboard contínuo para monitorar indicadores.</li>
+  </ul>
+  <p class="highlight">A auditoria incorpora perspectiva interseccional, considerando raça, idade, escolaridade e deficiência, evitando que vieses cruzados passem despercebidos.</p>
+
+  <h3>1.3 Público-Alvo</h3>
+  <ul>
+    <li><strong>Adotantes:</strong> empresas de médio e grande porte (RH, C-level) e setor público.</li>
+    <li><strong>Beneficiárias:</strong> mulheres e grupos sub-representados.</li>
+    <li><strong>Parceiros:</strong> universidades, ONGs e governos.</li>
+  </ul>
+
+  <h3>1.4 Proposta de Valor</h3>
+  <ul>
+    <li><strong>Para empresas:</strong> redução de riscos regulatórios, aumento da produtividade, reputação ética.</li>
+    <li><strong>Para profissionais:</strong> acesso equitativo a oportunidades de alta renda.</li>
+    <li><strong>Para o país:</strong> ecossistema de IA mais diverso e alinhado à legislação.</li>
+  </ul>
+
+  <h3>1.5 Acessibilidade e Sustentabilidade</h3>
+  <p>Plataforma acessível (WCAG 2.1/POUR) e PWA offline-first, compatível com hardware antigo. TI Verde com algoritmos otimizados e nuvem renovável.</p>
+
+  <h3>1.6 Impacto Mensurável (24 meses)</h3>
+  <table>
+    <tr><th>Indicador</th><th>Meta</th></tr>
+    <tr><td>Disparate Impact (DI)</td><td>≥ 0,80</td></tr>
+    <tr><td>Paridade recomendadas vs. contratadas</td><td>≥ 0,85</td></tr>
+    <tr><td>Participação feminina em IA</td><td>10,58% → ≥ 35%</td></tr>
+    <tr><td>Profissionais realocados (salário > R$ 15 mil)</td><td>+ 1.200</td></tr>
+    <tr><td>Redução de processos por discriminação</td><td>≥ 40%</td></tr>
+  </table>
+  <p>A plataforma reconhece riscos residuais e adota monitoramento contínuo por subgrupo, com auditoria interseccional periódica.</p>
+
+  <h3>1.7 Conclusão</h3>
+  <p>A Kraira IA transforma ética algorítmica em vantagem competitiva mensurável, promovendo justiça social, soberania digital e responsabilidade ambiental. A abordagem interseccional e o monitoramento de riscos garantem equidade contínua.</p>
+</div>
+
+<!-- 2. IMPACTO SOCIAL -->
+<div class="page" id="impacto">
+  <h2>2. Impacto Social</h2>
+  <p>Esta seção consolida as metas de impacto, métricas centrais e ferramentas de monitoramento da Kraira IA, separando o que é diretamente controlado pela plataforma do que depende de fatores sistêmicos.</p>
+
+  <h3>2.1 Mudança Positiva Esperada</h3>
+  <h4>Impacto direto (empresas clientes)</h4>
+  <ul>
+    <li>DI médio: de 0,65–0,70 para <strong>≥ 0,80</strong> em 12 meses.</li>
+    <li>Paridade recomendadas vs. contratadas: de 0,60 para <strong>≥ 0,85</strong> em 18 meses.</li>
+    <li>Abandono feminino no funil: de 35% para <strong>≤ 20%</strong> em 12 meses.</li>
+  </ul>
+  <h4>Impacto sistêmico (setor de IA)</h4>
+  <ul>
+    <li>Participação feminina em IA: de 10,58% para <strong>≥ 35%</strong> em 24 meses (meta aspiracional).</li>
+    <li>Mobilidade social: +1.200 profissionais de baixa renda em posições de elite.</li>
+    <li>Segurança jurídica: redução ≥ 40% em processos por discriminação algorítmica.</li>
+  </ul>
+
+  <h3>2.2 Suposições e Metas Progressivas</h3>
+  <p><strong>Suposições:</strong> adoção por 50 empresas no ano 1; integração com ATS; 70% das recomendações implementadas; contexto regulatório favorável.</p>
+  <table>
+    <tr><th>Indicador</th><th>6m</th><th>12m</th><th>24m</th></tr>
+    <tr><td>Disparate Impact (DI)</td><td>0,72</td><td>0,78</td><td>≥ 0,80</td></tr>
+    <tr><td>Paridade recomendadas vs. contratadas</td><td>0,70</td><td>0,78</td><td>≥ 0,85</td></tr>
+    <tr><td>Abandono feminino no funil</td><td>30%</td><td>25%</td><td>≤ 20%</td></tr>
+    <tr><td>Empresas ativas</td><td>20</td><td>100</td><td>500</td></tr>
+    <tr><td>Energia por auditoria (kWh)</td><td>0,8</td><td>0,6</td><td>≤ 0,5</td></tr>
+    <tr><td>Acessibilidade da auditoria</td><td>85%</td><td>90%</td><td>≥ 95%</td></tr>
+  </table>
+
+  <h3>2.3 Métricas Centrais e Fio Condutor</h3>
+  <p><strong>Fluxo:</strong> Auditoria do DI ➔ Queda no abandono ➔ Aumento das contratações femininas.</p>
+  <ul>
+    <li><strong>Disparate Impact (DI):</strong> razão entre aprovação feminina e masculina (ideal ≥ 0,80). Indica justiça ao evitar penalização por gênero. <em>Se piorar:</em> RH interrompe triagem, revisa proxies e aciona explicabilidade.</li>
+    <li><strong>Abandono no Funil:</strong> % de candidatas que desistem. Indica exclusão digital por interfaces pesadas ou falta de conexão. <em>Se piorar:</em> RH adota PWA offline‑first. Conforme estudo do Google/Think with Google, PWA reduz em até 42% a rejeição e 70% o consumo de dados.</li>
+    <li><strong>Participação Feminina Ativa:</strong> % de mulheres contratadas em dados/IA. Indica acesso a salários 56% maiores (PwC, 2026). <em>Se piorar:</em> RH revisa supervisão humana ativa (HITL) e aplica treinamento anti‑viés.</li>
+  </ul>
+
+  <h3>2.4 Ferramentas de Monitoramento</h3>
+  <ul>
+    <li><strong>Dashboard Power BI/Tableau:</strong> visualização em tempo real dos KPIs, com cartão de Disparate Impact (DI), gráfico de barras por gênero, funil de recrutamento e gráfico de dispersão entre scores e aprovação.</li>
+    <li><strong>Relatórios mensais automatizados:</strong> tendências e alertas.</li>
+    <li><strong>Auditoria independente semestral:</strong> validação externa.</li>
+    <li><strong>Sistema de alertas:</strong> notificação quando DI ou paridade saem da meta.</li>
+  </ul>
+
+  <h3>2.5 Exemplos Práticos de Mensuração</h3>
+  <ul>
+    <li><strong>Adoção:</strong> 500 organizações ativas no primeiro ano, retenção (D+30) ≥ 70%.</li>
+    <li><strong>Equidade:</strong> empresa piloto reduziu DI de 0,65 para 0,82 em 6 meses.</li>
+    <li><strong>Engajamento comunitário:</strong> 2.500 membros, 500 discussões, 100 casos documentados.</li>
+  </ul>
+
+  <h3>2.6 Conclusão</h3>
+  <p>A Kraira IA transforma ética em valor mensurável, com dados transparentes e auditáveis. Os indicadores respondem: a tecnologia está promovendo justiça e inclusão?</p>
+</div>
+
+<!-- 3. PIPELINE TÉCNICO -->
+<div class="page" id="pipeline">
+  <h2>3. Pipeline Técnico</h2>
+
+  <h3>3.1 Revisão das Métricas Atuais</h3>
+  <table>
+    <tr><th>Métrica</th><th>Cálculo</th><th>Significado</th></tr>
+    <tr><td>Taxa de aprovação por gênero</td><td><code>mean(aprovado) * 100</code></td><td>Percentual de aprovados em cada grupo.</td></tr>
+    <tr><td>Disparate Impact (DI)</td><td><code>taxa_feminino / taxa_masculino</code></td><td>Razão entre aprovações femininas e masculinas. Aceitável ≥ 0,80.</td></tr>
+    <tr><td>Correlação score × aprovação</td><td><code>corr(score_num, aprovado)</code></td><td>Força da relação entre nota e aprovação.</td></tr>
+    <tr><td>Inconsistências de funil</td><td>contagem de contradições</td><td>Identifica registros com aprovado inconsistente com etapa.</td></tr>
+  </table>
+
+  <h3>3.2 Passo a Passo para Executar a Simulação</h3>
+  <p><strong>Pré‑requisitos:</strong> Python 3.7+, pandas, numpy.</p>
+  <ol>
+    <li>Crie um arquivo <code>pipeline_kraira.py</code> e cole o script fornecido.</li>
+    <li>Execute no terminal: <code>python pipeline_kraira.py</code></li>
+    <li>O script irá gerar dados sujos, limpar, calcular métricas e exportar para CSV e SQLite.</li>
+  </ol>
+  <p><strong>Interpretação (exemplo com seed=42):</strong></p>
+  <ul>
+    <li>Taxas de aprovação: Feminino 41,7% | Masculino 58,3% | Não informado 35,0% | Outro 45,0%</li>
+    <li>DI = 0,715 → impacto adverso.</li>
+    <li>Correlações: portfolio 0,62 | técnico 0,78.</li>
+    <li>Inconsistências: ~25 registros.</li>
+  </ul>
+  <p><strong>Reprodutibilidade:</strong> o script <code>pipeline_kraira.py</code> é determinístico (seed=42) e pode ser executado em qualquer ambiente Python 3.7+. Os dados gerados são fictícios, servindo como prova de conceito para auditoria de equidade.</p>
+  <p><strong>Conexão com Power BI:</strong> importar <code>dados_limpos.csv</code> e criar gráficos de barras, cartão DI, funil e dispersão.</p>
+
+  <h4>3.2.1 Dashboard Power BI – Visualização de Equidade</h4>
+  <p>Após importar o arquivo <code>dados_limpos.csv</code>, o dashboard é estruturado com os seguintes elementos:</p>
+  <ul>
+    <li><strong>Cartão de Disparate Impact (DI):</strong> exibe o valor calculado (ex.: 0,715) e alerta visual quando está abaixo de 0,80.</li>
+    <li><strong>Gráfico de barras:</strong> taxa de aprovação por gênero padronizado (Feminino, Masculino, Não informado, Outro).</li>
+    <li><strong>Funil de recrutamento:</strong> contagem de candidatos por etapa (submissão, teste, entrevista, aprovado).</li>
+    <li><strong>Dispersão:</strong> correlação entre score técnico e score portfólio, colorido por status de aprovação.</li>
+    <li><strong>Indicador de meta:</strong> semáforo mostrando se o DI está dentro da meta (≥ 0,80).</li>
+  </ul>
+  <p>O dashboard é atualizável a cada novo ciclo seletivo, permitindo acompanhar a evolução das métricas de equidade ao longo do tempo.</p>
+</div>
+
+<!-- 4. INTERSECCIONALIDADE E RISCOS -->
+<div class="page" id="interseccionalidade">
+  <h2>4. Interseccionalidade e Riscos Residuais</h2>
+
+  <h3>4.1 Contexto</h3>
+  <p>A auditoria de gênero é um primeiro passo essencial, mas insuficiente. A análise unidimensional mascara desigualdades interseccionais. Este anexo documenta aprendizados e riscos residuais.</p>
+
+  <h3>4.2 Interseccionalidade – o que aprendemos</h3>
+  <ul>
+    <li>DI global pode mascarar subgrupos com taxas muito inferiores (mulheres negras, com deficiência).</li>
+    <li>Coleta atual (apenas gênero) impede detecção de vieses cruzados.</li>
+    <li>Necessário incluir raça/cor, idade, escolaridade e deficiência.</li>
+  </ul>
+
+  <h3>4.3 Riscos residuais</h3>
+  <table>
+    <tr><th>Risco</th><th>Descrição</th><th>Impacto</th></tr>
+    <tr><td>Viés de proxy</td><td>Uso de variáveis correlacionadas a identidade</td><td>Perpetua discriminação indireta</td></tr>
+    <tr><td>Falta de poder estatístico</td><td>Subgrupos pequenos geram falsos negativos</td><td>Decisões injustas não identificadas</td></tr>
+    <tr><td>Supervisão superficial</td><td>HITL burocrático</td><td>Viés humano não mitigado</td></tr>
+    <tr><td>Dados desatualizados</td><td>Mudanças demográficas tornam modelo obsoleto</td><td>Perda de eficácia</td></tr>
+  </table>
+
+  <h3>4.4 Recomendações</h3>
+  <p>Diante dos riscos identificados, as seguintes recomendações são propostas para mitigação contínua:</p>
+  <ul>
+    <li>Auditoria interseccional periódica.</li>
+    <li>Coleta de dados sensíveis com consentimento.</li>
+    <li>Revisão de proxies.</li>
+    <li>Reamostragem para subgrupos pequenos.</li>
+    <li>HITL com checklist obrigatório.</li>
+    <li>Monitoramento contínuo de DI por subgrupo.</li>
+  </ul>
+
+  <h3>4.5 Conclusão</h3>
+  <p>A verdadeira equidade exige abordagem interseccional. Os riscos residuais são gerenciáveis com monitoramento ativo e transparência.</p>
+</div>
+
+<!-- 5. REFERÊNCIAS -->
+<div class="page" id="referencias">
+  <h2>5. Referências</h2>
+  <ul>
+    <li>PWC BRASIL. <em>Barômetro de Empregos de IA 2026</em>. São Paulo, 2026.</li>
+    <li>GOOGLE. <em>The Value of Progressive Web Apps</em>. Think with Google.</li>
+    <li>BRASIL. <em>Lei Geral de Proteção de Dados Pessoais (LGPD)</em>. Lei nº 13.709, de 14 de agosto de 2018.</li>
+    <li>BRASIL. <em>Marco Legal da Inteligência Artificial</em>. Projeto de Lei nº 2338, de 2023.</li>
+  </ul>
+  <div class="footer">
+    Projeto Kraira IA – Relatório de Impacto Social e Auditoria Ética | Talita Moreno | 2026
+  </div>
+</div>
+
+</body>
+</html>
